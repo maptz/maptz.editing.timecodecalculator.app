@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.Editing.TimeCodeCalculator.Engine", "Maptz.Editing.TimeCodeCalculator.Engine\Maptz.Editing.TimeCodeCalculator.Engine.csproj", "{92B3324B-8279-4BA1-86BD-C606FB974353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{C6851CEF-F4C6-40A2-B54E-A2E457537924}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.TimeCode.Base", "..\..\..\netcorelibs\maptz.timecode.base\src\Maptz.TimeCode.Base\Maptz.TimeCode.Base.csproj", "{A85F128F-FA68-4233-A43D-8254B851AC23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.Editing.TimeCodeCalculator.ConsoleApp", "Maptz.Editing.TimeCodeCalculator.ConsoleApp\Maptz.Editing.TimeCodeCalculator.ConsoleApp.csproj", "{27F77947-EACF-4EAC-9846-57B0E077E61F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B3324B-8279-4BA1-86BD-C606FB974353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B3324B-8279-4BA1-86BD-C606FB974353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B3324B-8279-4BA1-86BD-C606FB974353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B3324B-8279-4BA1-86BD-C606FB974353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85F128F-FA68-4233-A43D-8254B851AC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85F128F-FA68-4233-A43D-8254B851AC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85F128F-FA68-4233-A43D-8254B851AC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85F128F-FA68-4233-A43D-8254B851AC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A85F128F-FA68-4233-A43D-8254B851AC23} = {C6851CEF-F4C6-40A2-B54E-A2E457537924}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21524888-A773-4A5B-A45D-D087279C4533}
+	EndGlobalSection
+EndGlobal
