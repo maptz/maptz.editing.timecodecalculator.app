@@ -40,7 +40,7 @@ namespace Maptz.Editing.TimeCodeCalculator.Engine
             if (IsTimeCode(timecode)) return GetTimeCode(timecode, frameRate);
 
             //We know there is at least one colon.
-            var colonParts = timecode.Split(':').Select(p=>int.Parse(p)).ToArray();
+            var colonParts = timecode.Split(new char[] { ':', '.', ';' }).Select(p=>int.Parse(p)).ToArray();
             var cpl = colonParts.Length;
             if (cpl < 2 || cpl > 4) throw new InvalidOperationException();
 
@@ -133,7 +133,7 @@ namespace Maptz.Editing.TimeCodeCalculator.Engine
             }
             else
             {
-                this.State.AddToBuffer(this.State.TimeCode.ToString());
+                this.State.AddToBuffer("????");
             }
         }
         /* #endregion Interface: 'Maptz.Editing.TimeCodeCalculator.Engine.ITimeCodeCalculator' Methods */

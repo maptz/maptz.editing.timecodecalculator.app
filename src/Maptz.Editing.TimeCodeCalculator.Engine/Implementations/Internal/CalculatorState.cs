@@ -85,7 +85,7 @@ namespace Maptz.Editing.TimeCodeCalculator.Engine
         {
             var newBuffer = new string[this.Buffer.Length + 1];
             if (this.Buffer.Length > 0) { this.Buffer.CopyTo(newBuffer, 0); }
-            newBuffer[newBuffer.Length - 1] = this.TimeCode.ToString();
+            newBuffer[newBuffer.Length - 1] = str;
             this.Buffer = newBuffer;
         }
         /* #endregion Interface: 'Maptz.Editing.TimeCodeCalculator.Engine.ITimeCodeCalculatorState' Methods */

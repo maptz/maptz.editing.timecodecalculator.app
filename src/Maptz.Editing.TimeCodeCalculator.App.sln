@@ -5,11 +5,23 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.Editing.TimeCodeCalculator.Engine", "Maptz.Editing.TimeCodeCalculator.Engine\Maptz.Editing.TimeCodeCalculator.Engine.csproj", "{92B3324B-8279-4BA1-86BD-C606FB974353}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{C6851CEF-F4C6-40A2-B54E-A2E457537924}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Libraries", "External Libraries", "{C6851CEF-F4C6-40A2-B54E-A2E457537924}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.TimeCode.Base", "..\..\..\netcorelibs\maptz.timecode.base\src\Maptz.TimeCode.Base\Maptz.TimeCode.Base.csproj", "{A85F128F-FA68-4233-A43D-8254B851AC23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maptz.Editing.TimeCodeCalculator.ConsoleApp", "Maptz.Editing.TimeCodeCalculator.ConsoleApp\Maptz.Editing.TimeCodeCalculator.ConsoleApp.csproj", "{27F77947-EACF-4EAC-9846-57B0E077E61F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{6D442225-6B79-47D7-A18D-758B22748F44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{C2262B21-AEBD-4C47-BCB5-A167176F8DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maptz.Editing.TimeCodeCalculator.BlazorApp.Server", "Maptz.Editing.TimeCodeCalculator.BlazorApp\Server\Maptz.Editing.TimeCodeCalculator.BlazorApp.Server.csproj", "{88849B29-E213-43F2-8C33-F524049DFE7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maptz.Editing.TimeCodeCalculator.BlazorApp.Client", "Maptz.Editing.TimeCodeCalculator.BlazorApp\Client\Maptz.Editing.TimeCodeCalculator.BlazorApp.Client.csproj", "{0BCB1A98-9B34-448F-8F77-EF11ECA4352E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maptz.Editing.TimeCodeCalculator.BlazorApp.Shared", "Maptz.Editing.TimeCodeCalculator.BlazorApp\Shared\Maptz.Editing.TimeCodeCalculator.BlazorApp.Shared.csproj", "{AAB6064D-8320-4E92-834F-C4F200F07A81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{13BE2E51-C103-4F4C-8841-BDA06741A402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +41,30 @@ Global
 		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F77947-EACF-4EAC-9846-57B0E077E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88849B29-E213-43F2-8C33-F524049DFE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88849B29-E213-43F2-8C33-F524049DFE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88849B29-E213-43F2-8C33-F524049DFE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88849B29-E213-43F2-8C33-F524049DFE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCB1A98-9B34-448F-8F77-EF11ECA4352E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCB1A98-9B34-448F-8F77-EF11ECA4352E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCB1A98-9B34-448F-8F77-EF11ECA4352E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCB1A98-9B34-448F-8F77-EF11ECA4352E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB6064D-8320-4E92-834F-C4F200F07A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB6064D-8320-4E92-834F-C4F200F07A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB6064D-8320-4E92-834F-C4F200F07A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB6064D-8320-4E92-834F-C4F200F07A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A85F128F-FA68-4233-A43D-8254B851AC23} = {C6851CEF-F4C6-40A2-B54E-A2E457537924}
+		{27F77947-EACF-4EAC-9846-57B0E077E61F} = {C2262B21-AEBD-4C47-BCB5-A167176F8DEA}
+		{C2262B21-AEBD-4C47-BCB5-A167176F8DEA} = {6D442225-6B79-47D7-A18D-758B22748F44}
+		{88849B29-E213-43F2-8C33-F524049DFE7C} = {6D442225-6B79-47D7-A18D-758B22748F44}
+		{0BCB1A98-9B34-448F-8F77-EF11ECA4352E} = {6D442225-6B79-47D7-A18D-758B22748F44}
+		{AAB6064D-8320-4E92-834F-C4F200F07A81} = {6D442225-6B79-47D7-A18D-758B22748F44}
+		{13BE2E51-C103-4F4C-8841-BDA06741A402} = {6D442225-6B79-47D7-A18D-758B22748F44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21524888-A773-4A5B-A45D-D087279C4533}

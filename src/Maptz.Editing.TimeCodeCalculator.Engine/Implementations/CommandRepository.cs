@@ -26,7 +26,7 @@ namespace Maptz.Editing.TimeCodeCalculator.Engine
             var addCommand = new SimpleCommand(AddCommandName, (str, state) =>
             {
                 state.CommandState = CommandState.ExpectingAddOperand;
-                state.AddToBuffer("-");
+                state.AddToBuffer("+");
             }, GetMatchFunc("+"));
 
             retval.Add(addCommand);
